@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="pobots" content="none">
+   <meta name="Author" content="Галина Пенер">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lolishop | Product page</title>
+   <link rel="shortcut icon" href="/images/favicon.ico" type="image/favicon.ico">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="header__top">
+            <div class="header__container _container">
+               <div class="header__body">
+                  <a href="#" class="header__logo logo">
+                     <img class="logo__img" src="images/logo.svg" alt="Lolishop">
+                  </a>
+                  <div class="header__menu menu">
+                     <nav class="menu__body">
+                        <ul class="menu__list">
+                           <li class="menu__item">
+                              <a class="menu__link" href="">Главная</a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="">Магазин</a>
+                           </li>
+                           <li class="menu__item">
+                              <span>Страница товара</span>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="">Блог</a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="">Контакт</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="header__actions actions-header">
+                     <div class="actions-header__item search-form">
+                        <button type="button" class="search-form__icon _icon-search"></button>
+                        <form action="#" class="search-form__item">
+                           <button type="submit" class="search-form__btn _icon-search"></button>
+                           <input type="text" name="text" placeholder="Поиск" class="search-form__input">
+                        </form>
+                     </div>
+                     <div class="actions-header__item favorites-header">
+                        <a href="#!" class="favorites-header__icon _icon _icon-favorite">
+                           <span class="favorites-header__number _number">1</span>
+                        </a>
+                     </div>
+                     <div class="actions-header__item cart-header">
+                        <a href="#!" class="cart-header__icon _icon _icon-cart">
+                           <span class="cart-header__number _number">2</span>
+                        </a>
+                     </div>
+                     <div class="actions-header__item user">
+                        <a class="user__icon _icon _icon-user js-popup__link" href="#popup-registration"></a>
+                        <div id="popup-registration" class="popup mfp-hide">
+                           <div class="popup__header">
+                              <span class="popup__title">Вход в аккаунт</span>
+                              <div class="popup__close">
+                                 <svg class="popup__close-icon close">
+                                    <use xlink:href="images/icons/close.svg#close"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div class="popup__body">
+                              <form class="form-registration" action="#">
+                                 <div class="form-registration__line">
+                                    <div class="form-registration-group form-registration-group--required">
+                                       <div class="form-registration-group__body">
+                                          <label class="form-registration-group__label">Пользователь</label>
+                                          <input class="form-registration-group__input" type="text" name="name" placeholder="Пользователь">
+                                       </div>
+                                       <div class="form-registration-group__body">
+                                          <label class="form-registration-group__label">Введите пароль</label>
+                                          <input class="form-registration-group__input" type="password" name="password" placeholder="Введите пароль">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-registration__line">
+                                    <div class="form-registration-group">
+                                       <button class="form-registration-group__btn" type="submit">Авторизация</button>
+                                    </div>
+                                 </div>
+                                 <div class="form-registration__line">
+                                    <div class="form-registration-group">
+                                       <a class="form-registration-group__info-link" href="#!">У вас нет аккуанта? Регистрация</a>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="header__burger" type="button">
+                     <span></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="header__bottom">
+            <div class="header__container _container">
+               <div class="header__bottom-inner">
+                  <div class="catalog-nav">
+                     <div class="catalog-nav__burger burger">
+                        <button class="burger__btn" type="button">
+                           <span></span>
+                        </button>
+                        <span class="burger__title">Каталог товаров</span>
+                     </div>
+                     <div class="catalog-nav__body">
+                        <nav class="catalog-nav__menu">
+                           <ul class="catalog-nav__list">
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Женщинам</span>
+                                    <span class="catalog-nav__count-text count-text">23</span>
+                                 </a>
+                                 <div class="catalog-nav-submenu" data-simplebar>
+                                    <div class="catalog-nav-submenu__inner">
+                                       <div class="catalog-nav-submenu__col">
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Одежда</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Блузки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">102</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Рубашки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">92</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Брюки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">68</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Свадьба</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Аксессуары</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">95</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Свадебные платья</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">202</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Обувь для невесты</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">195</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Офис</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Костюмы</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">33</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Рубашки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">54</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Кардиганы</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">23</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="catalog-nav-submenu__col">
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Большие размеры</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Джинсы, брюки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">69</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Верхняя одежда</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">57</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Будущие мамы</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Бельё и купальники</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">101</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Блузки, рубашки</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">96</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Брюки, джинсы</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">114</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="catalog-nav-submenu__block">
+                                             <div class="catalog-nav-submenu__header">
+                                                <span class="catalog-nav-submenu__title">Одежда для дома</span>
+                                             </div>
+                                             <ul class="catalog-nav-submenu__list">
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Брюки и шорты</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">45</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Блузки и туники</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">30</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__text">Костюмы и комбинезоны</span>
+                                                      <span class="catalog-nav-submenu__count-text count-text">52</span>
+                                                   </a>
+                                                </li>
+                                                <li class="catalog-nav-submenu__item">
+                                                   <a class="catalog-nav-submenu__link" href="#">
+                                                      <span class="catalog-nav-submenu__categories">Все категории</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Мужчинам</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Детям</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Обувь</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Аксессуары</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Спорт</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                              <li class="catalog-nav__item">
+                                 <a class="catalog-nav__label" href="#!">
+                                    <span class="catalog-nav__label-text">Бренды</span>
+                                 </a>
+                                 <div class="catalog-nav__submenu"></div>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="location">
+                     <div class="location__header _icon-location">
+                        <span class="location__current ">Санкт-Петербург</span>
+                     </div>
+                     <div class="location__body">
+                        <div class="location-question">
+                           <span class="location-question__text">Ваш регион доставки Санкт-Петербург?</span>
+                           <div class="location-question__buttons">
+                              <div class="location-question__btn" data-location="yes">
+                                 Да, верно
+                              </div>
+                              <div class="location-question__btn location-question__btn--border" data-location="no">
+                                 Нет, уточнить регион
+                              </div>
+                           </div>
+                        </div>
+                        <div class="location-choose">
+                           <div class="location-choose__header">
+                              <input class="location-choose__input" type="text" placeholder="Поиск по городу">
+                           </div>
+                           <div class="location-choose__body" data-simplebar>
+                              <ul class="location-choose__list">
+                                 <li class="location-choose__item">Москва</li>
+                                 <li class="location-choose__item">Санкт-Петербург</li>
+                                 <li class="location-choose__item">Екатеринбург</li>
+                                 <li class="location-choose__item">Омск</li>
+                                 <li class="location-choose__item">Нижний Новгород</li>
+                                 <li class="location-choose__item">Казань</li>
+                                 <li class="location-choose__item">Новоросийск</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="page">
+         <section class="page__top top">
+            <div class="top__container _container">
+               <h1 class="top__title">Страница товара</h1>
+
+               <div class="breadcrumbs _icon-home">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item">
+                        <a href="http://cupcak.ru/">Главная</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <a href="http://cupcak.ru/shop-page.html">Магазин</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <span>Страница товара</span>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <a href="http://cupcak.ru/blog.html">Блог</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <a href="http://cupcak.ru/contact.html">Контакт</a>
+                     </li>
+                  </ul>
+               </div>
+
+            </div>
+         </section>
+
+         <div class="page__product-page product-page">
+            <div class="product-page__container _container">
+               <div class="product-page__inner">
+                  <div class="product-page__slide product-slide-card">
+                     <div class="product-slide-card__thumb">
+                        <div class="product-slide-card__thumb-item">
+                           <img class="product-slide-card__thumb-img" src="images/content/4.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__thumb-item">
+                           <img class="product-slide-card__thumb-img" src="images/content/5.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__thumb-item">
+                           <img class="product-slide-card__thumb-img" src="images/content/6.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__thumb-item">
+                           <img class="product-slide-card__thumb-img" src="images/content/4.jpg" alt="Пальто женское">
+                        </div>
+                     </div>
+                     <div class="product-slide-card__big">
+                        <div class="product-slide-card__big-item">
+                           <img class="product-slide-card__big-img" src="images/content/4.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__big-item">
+                           <img class="product-slide-card__big-img" src="images/content/5.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__big-item">
+                           <img class="product-slide-card__big-img" src="images/content/6.jpg" alt="Пальто женское">
+                        </div>
+                        <div class="product-slide-card__big-item">
+                           <img class="product-slide-card__big-img" src="images/content/4.jpg" alt="Пальто женское">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="product-page__content">
+                     <div class="product-page__title">Пальто женское демисезонное "Classic Reserve"</div>
+                     <span class="product-page__article">Артикул: 1R1074</span>
+                     <form class="product-page__form-size form-size" action="#">
+                        <span class="form-size__title">Размер:</span>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size">
+                           <span class="form-size__checkbox">S</span>
+                        </label>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size" checked>
+                           <span class="form-size__checkbox">M</span>
+                        </label>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size">
+                           <span class="form-size__checkbox">L</span>
+                        </label>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size">
+                           <span class="form-size__checkbox">XS</span>
+                        </label>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size">
+                           <span class="form-size__checkbox">XL</span>
+                        </label>
+                        <label class="form-size__label">
+                           <input class="form-size__input" type="radio" name="size">
+                           <span class="form-size__checkbox">XXL</span>
+                        </label>
+                     </form>
+                     <form class="product-page__form-color form-color" action="#">
+                        <div class="form-color__title">Цвет:</div>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color">
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #f49ac1;">
+                              </span>
+                           </span>
+                        </label>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color" checked>
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #dfdbdb"></span>
+                           </span>
+                        </label>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color">
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #ffbc41"></span>
+                           </span>
+                        </label>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color">
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #b370ff"></span>
+                           </span>
+                        </label>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color">
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #6fdf9e"></span>
+                           </span>
+                        </label>
+                        <label class="form-color__label">
+                           <input class="form-color__input" type="radio" name="color">
+                           <span class="form-color__checkbox">
+                              <span style="background-color: #ff6060"></span>
+                           </span>
+                        </label>
+                     </form>
+                     <span class="product-page__price">25.500 руб</span>
+                     <form class="product-page__digital-selector digital-selector" action="#">
+                        <input class="digital-selector__num" type="number" value="1" min="1">
+                        <button class="digital-selector__btn" type="submit">В корзину</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="page__information information">
+            <div class="information__container _container">
+               <div class="information__wrapper tabs-wrapper">
+                  <div class="mobile-overflow">
+                     <div class="information__tabs">
+                        <a class="information__tab tab tab--active" href="#information-1">
+                           <span class="information__title">Отзывы</span>
+                        </a>
+                        <a class="information__tab tab" href="#information-2">
+                           <span class="information__title">Характеристики</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="information__container">
+                  <div id="information-1" class="information__tabs-content tabs-content tabs-content--active">
+                     <div class="information__item">
+                        <div class="information__comments comments">
+                           <a class="comments__user _ibg" href="#">
+                              <picture>
+                                 <source srcset="images/content/avatar.webp" type="image/webp">
+                                 <img src="images/content/avatar.jpg" alt="Пользователь">
+                              </picture>
+                           </a>
+                           <div class="comments__content">
+                              <div class="comments__content-top">
+                                 <p class="comments__name">Лиза Цветкова</p>
+                                 <p class="comments__date">5.01.2001</p>
+                                 <div class="comments__star star" data-rateyo-rating="5"></div>
+                              </div>
+                              <div class="comments__text">
+                                 Хорошее повседневное пальто, вот подумываю пришить подклад и сделать так,чтобы застёгивалось, так как на мне без пояса смотрится лучше, а без него только нараспашку. По размеру точно подошло - ни больше, ни меньше.
+                              </div>
+                              <a class="comments__reply _icon-shape_left" href="#!">Ответить</a>
+                           </div>
+                        </div>
+                        <div class="information__comments comments">
+                           <a class="comments__user _ibg" href="#">
+                              <picture>
+                                 <source srcset="images/content/avatar.webp" type="image/webp">
+                                 <img src="images/content/avatar.jpg" alt="Пользователь">
+                              </picture>
+                           </a>
+                           <div class="comments__content">
+                              <div class="comments__content-top">
+                                 <p class="comments__name">Света Ильина</p>
+                                 <p class="comments__date">5.01.2001</p>
+                                 <div class="comments__star star" data-rateyo-rating="2"></div>
+                              </div>
+                              <div class="comments__text">
+                                 Пальто не плохое, ужасно то, что нет подкладки, тк при носке подол прилипает к ногам и как будто связывает их, очень раздражает, и скатывается, на второй день носки скаталось, но есть плюс, на такой расцветке их не видно
+                              </div>
+                              <a class="comments__reply _icon-shape_left" href="#!">Ответить</a>
+                           </div>
+                        </div>
+                        <div class="information__comments comments">
+                           <a class="comments__user _ibg" href="#">
+                              <picture>
+                                 <source srcset="images/content/avatar.webp" type="image/webp">
+                                 <img src="images/content/avatar.jpg" alt="Пользователь">
+                              </picture>
+                           </a>
+                           <div class="comments__content">
+                              <div class="comments__content-top">
+                                 <p class="comments__name">Оля Попова</p>
+                                 <p class="comments__date">5.01.2001</p>
+                                 <div class="comments__star star" data-rateyo-rating="4"></div>
+                              </div>
+                              <div class="comments__text">
+                                 Классное пальто! Но мне оказалось очень большим((((
+                              </div>
+                              <a class="comments__reply _icon-shape_left" href="#!">Ответить</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="information__item">
+                        <div class="information__review review">
+                           <p class="review__title">
+                              Добавьте свой отзыв
+                           </p>
+                           <div class="review__box-rating">
+                              <span class="review__subtitle">Ваш рейтинг</span>
+                              <form class="review__simple-rating simple-rating" action="#">
+                                 <div class="simple-rating__items">
+                                    <input id="simple-rating__5" class="simple-rating__item" type="radio" name="simple-rating" value="5">
+                                    <label for="simple-rating__5" class="simple-rating__label"></label>
+                                    <input id="simple-rating__4" class="simple-rating__item" type="radio" name="simple-rating" value="5">
+                                    <label for="simple-rating__4" class="simple-rating__label"></label>
+                                    <input id="simple-rating__3" class="simple-rating__item" type="radio" name="simple-rating" value="5">
+                                    <label for="simple-rating__3" class="simple-rating__label"></label>
+                                    <input id="simple-rating__2" class="simple-rating__item" type="radio" name="simple-rating" value="5">
+                                    <label for="simple-rating__2" class="simple-rating__label"></label>
+                                    <input id="simple-rating__1" class="simple-rating__item" type="radio" name="simple-rating" value="5">
+                                    <label for="simple-rating__1" class="simple-rating__label"></label>
+                                 </div>
+                              </form>
+                           </div>
+                           <form class="review__form" action="#">
+                              <div class="review__box-input">
+                                 <input class="review__text-input" type="text" name="name" placeholder="Ваше имя" required>
+                                 <input class="review__text-input" type="text" name="email" placeholder="Ваш E-mail адрес" required>
+                              </div>
+                              <textarea class="review__textarea" placeholder="Ваш текст здесь"></textarea>
+                              <button class="review__btn _btn" type="submit">Оставить отзыв</button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="information-2" class="information__tabs-content tabs-content">
+                     <div class="information__characteristic characteristic">
+                        <div class="characteristic__item">
+                           <span class="characteristic__title">Состав:</span>
+                           <span class="characteristic__text">100% полиэстер</span>
+                        </div>
+                        <div class="characteristic__item">
+                           <span class="characteristic__title">Уход:</span>
+                           <span class="characteristic__text">Стирать в деликатном режиме при температуре воды 30°. НЕ использовать отбеливатели. Допускается деликатная химическая чистка</span>
+                        </div>
+                        <div class="characteristic__item">
+                           <span class="characteristic__title">Ткань:</span>
+                           <span class="characteristic__text">Ткань верха - курточная ткань с влагостойким покрытием, подклад - мех подкладочный, подклад стеганый, утеплитель - слайтекс микро 80гр</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <section class="page__related-products related-products">
+            <div class="related-products__container _container">
+               <h2 class="related-products__title _title">Сопутствующие товары</h2>
+               <div class="products-slider">
+                  <div class="products-slider__inner">
+                     <div class="card-product card-product--sale">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="4"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-product">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="5"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                              <span class="card-product__old-price">10.000 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-product">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="5"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                              <span class="card-product__old-price">10.000 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-product card-product--sale">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="4"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-product">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="5"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                              <span class="card-product__old-price">10.000 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-product card-product--sale">
+                        <div class="card-product__images _ibg">
+                           <picture>
+                              <source srcset="images/content/1.webp" type="image/webp">
+                              <img src="images/content/1.jpg" alt="Image">
+                           </picture>
+                           <div class="card-product__button-box">
+                              <button class="card-product__icon card-product__cart _icon-cart"></button>
+                              <button class="card-product__icon card-product__favorite _icon-favorite"></button>
+                           </div>
+                        </div>
+                        <a class="card-product__body" href="#">
+                           <div class="card-product__star" data-rateyo-rating="4"></div>
+                           <span class="card-product__title">Куртка-пиджак "Осень"</span>
+                           <div class="card-product__price">
+                              <span class="card-product__new-price">8.500 руб</span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container _container">
+            <div class="footer__body">
+               <div class="footer__main">
+                  <a href="#" class="footer__logo">
+                     <img class="logo__img " src="images/logo.svg" alt="Lolishop">
+                  </a>
+                  <div class="footer__text">Город Москва. ул. Куйбышева дом 155 офис-7</div>
+                  <address class="footer__contacts contacts-footer">
+                     <a href="#" class="contacts-footer__item _icon-location">ул. Куйбышева <br> дом 155 офис-7</a>
+                     <a href="tel:+82426442" class="contacts-footer__item _icon-phone">+7-342-242-64-42</a>
+                  </address>
+               </div>
+
+               <div data-spollers="768,max" class="footer__menu menu-footer">
+                  <div class="menu-footer__column">
+                     <button type="button" data-spoller class="menu-footer__title _footer-title">Меню</button>
+                     <ul class="menu-footer__list">
+                        <li><a href="#!" class="menu-footer__link">Главная</a></li>
+                        <li><a href="#!" class="menu-footer__link">Магазин</a></li>
+                        <li><a href="#!" class="menu-footer__link">Страница товара</a></li>
+                        <li><a href="#!" class="menu-footer__link">Блог</a></li>
+                        <li><a href="#!" class="menu-footer__link">Контакт</a></li>
+                     </ul>
+                  </div>
+                  <div class="menu-footer__column">
+                     <button type="button" data-spoller class="menu-footer__title _footer-title">Аккаунт</button>
+                     <ul class="menu-footer__list">
+                        <li><a href="#!" class="menu-footer__link">Мой аккаунт</a></li>
+                        <li><a href="#!" class="menu-footer__link">Избранное</a></li>
+                        <li><a href="#!" class="menu-footer__link">Моя корзина</a></li>
+                        <li><a href="#!" class="menu-footer__link">Мой каталог</a></li>
+                     </ul>
+                  </div>
+                  <div class="menu-footer__column">
+                     <button type="button" data-spoller class="menu-footer__title _footer-title">Соцсети</button>
+                     <ul class="menu-footer__list">
+                        <li><a href="#!" class="menu-footer__link _icon-facebook">Facebook</a></li>
+                        <li><a href="#!" class="menu-footer__link _icon-instagram">Instagram</a></li>
+                        <li><a href="#!" class="menu-footer__link _icon-twitter">Twitter</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="footer__subscribe subscribe">
+                  <div class="subscribe__title _footer-title">Подпишитесь на новости</div>
+                  <form action="#" class="subscribe__form">
+                     <input class="subscribe__input" autocomplete="on" type="text" name="email" placeholder="Ваш email">
+                     <button class="subscribe__button _icon-send" type="submit"></button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
+<!-- ©Верстка сделана Пенер Галиной 25 декабря 2021 года -->
+<!-- email: galyapener@mail.ru -->
